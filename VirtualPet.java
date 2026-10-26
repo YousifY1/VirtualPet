@@ -17,6 +17,11 @@ public class VirtualPet {
 
       // TODO 1:
       // Create a while loop that continues while:
+      while (happiness < 15 && hunger < 10 && energy > 0 && choice != 5)
+        {
+            System.out.println("Happiness: 15");
+            System.out.println("Hunger: 10");
+            System.out.println("Energy: 0");
       // happiness < 15
       // hunger < 10
       // energy > 0
@@ -37,7 +42,25 @@ public class VirtualPet {
          // TODO 3:
          // Create an if / else if / else statement
          // to handle the player's choice.
-         //
+         if (choice == 1) {
+               happiness += 1;
+               hunger -= 3;
+          }     
+         if (choice == 2) {
+               happiness += 3;
+               hunger += 2;  
+               energy -= 2;
+          }     
+         if (choice == 3) {
+               happiness -= 1;
+               hunger += 1;
+               energy += 3;
+          }     
+         if (choice == 4) {
+               happiness += 2;
+               hunger += 1;
+               energy -= 1;
+          }
          // Update the three statistics according
          // to the table in the instructions.
          //
